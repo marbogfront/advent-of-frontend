@@ -1,5 +1,5 @@
 export class GiftRegistry {
-    childrenGifts: Map<number, string[]>;
+    private childrenGifts: Map<number, string[]>;
 
     constructor() {
         this.childrenGifts = new Map();
