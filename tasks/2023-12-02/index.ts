@@ -26,5 +26,7 @@ export class ChristmasQueue<T> {
     }
 }
 
-
-type Item<T> = {gift: T, priority: number};
+type Item<T> = {
+    gift: T, 
+    priority: number
+};
