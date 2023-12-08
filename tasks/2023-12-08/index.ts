@@ -14,6 +14,7 @@ export interface Letter {
     constructor(sortStrategy: SortStrategy) {
         this._sortStrategy = sortStrategy;
     }
+    
     sortLetters(letters: Letter[]): Letter[] {
       return this._sortStrategy.sortLetters(letters);
     }
@@ -40,4 +41,3 @@ export interface Letter {
         return letters.sort((a, b) => a.content.length - b.content.length);
       }
   }
-  
